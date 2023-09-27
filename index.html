@@ -1,536 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apna restaurant</title>
-  <link rel="icon" type="image/x-icon" href="/Images/favicon/favicon.png">
-  <link rel="stylesheet" href="./style.css" />
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <style>
-    .navbar-nav .nav-item .nav-link:hover {
-      background-color: #343a40;
-      color: #ffc107;
-      border-radius: 10px;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-      transition: background-color 0.2s, color 0.2s;
-    }
-  </style>
+  <title>Portfolio Website-Prashant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<h1>APNA RESTAURANT </h1>
-  <section id="navBar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#events">Events</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#reservation">Reservation</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#chefs">Chefs</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Prashant Kaushik</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-      </div>
     </nav>
-  </section>
-
-  <section id="homesection">
-    <div id="outerhome">
-      <div class="row justify-content-center" style="display: flex; align-items: center">
-        <div class="col-md-1"></div>
-        <div class="col-md-4 d-flex flex-column align-items-center">
-          <h1 style="color: white">MORE THAN</h1>
-          <h1>
-            <span style="color: white">JUST</span><span style="color: rgb(207, 27, 27)"> PIZZA</span>
-          </h1>
-          <p class="text-center" style="color: rgb(233, 130, 130); font-size: 16px">
-            "Indulge in the irresistible flavors of our artisanal pizzas,
-            crafted with love and the finest ingredients. Delight your taste
-            buds and experience pizza perfection at its best."
-          </p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 d-flex flex-column align-items-center">
-          <img src="./Images/Homepage/homepageimg.png" alt="" width="100%" style="transform: scaleX(-1);" />
-
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="AboutSection">
-    <div id="outeraboutsection">
-      <div class="row">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 style="text-align: center; color: white" id="about">
-              About Us
-            </h1>
-          </div>
-        </div>
-        <div class="row justify-content-center" style="display: flex; align-items: center">
-          <div class="col-md-1"></div>
-
-          <div class="col-md-4 d-flex flex-column align-items-center">
-            <img src="./Images/aboutpage/aboutpageimg.png" alt="" style="transform: scaleX(-1)" width="100%" />
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-5 d-flex flex-column align-items-center">
-            <h1 style="color: #fdfcfa ; text-align: center">
-              Welcome To Apna Restaurant
-            </h1>
-
-            <p class="text-center" style="color: #339dcb;">
-              We are passionate about crafting the most delicious and
-              mouthwatering pizzas that are sure to tantalize your taste buds.
-              With an irresistible array of premium toppings, homemade sauces,
-              and fresh, hand-tossed dough, each bite is a burst of flavor and
-              satisfaction. Our commitment to quality and customer
-              satisfaction drives us to deliver not just a pizza but an
-              unforgettable experience.
-            </p>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="menuSection">
-    <div class="outer" id="outerMenu">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 style="text-align: center" id="menu">Our Menu</h1>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/BBQ Chicken Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Cheese Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Diablo Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Margherita Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Pepperoni Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Spinach and Feta Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Supreme Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 d-flex flex-column align-items-center menu-card">
-          <div class="card">
-            <img src="./Images/Menu/Veggie Delight Pizza.jpg" alt="" width="100%" />
-            <div class="card-body">
-              <h5 class="card-title text-center">Lorem ipsum</h5>
-              <p class="card-text text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <h5 class="card-title text-center" style="color: red">$9.5</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="EventSection">
-    <div class="outerEventSection">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 style="text-align: center" id="events">Events</h1>
-          <p style="text-align: center">Celebrate Your Events With Us</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./Images/resized/Event1.jpg" width="100%" alt="First slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Images/resized/Event2.jpg" width="100%" alt="Second slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Images/resized/Event3.jpg" width="100%" alt="Third slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Images/resized/Event4.jpg" width="100%" alt="Third slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Images/resized/Event5.jpg" width="100%" alt="Third slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Images/resized/Event6.jpg" width="100%" alt="Third slide" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./Images/resized/Event7.jpg" width="100%" alt="Third slide" />
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reservationSection">
-    <div class="outerReservation">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 style="text-align: center; font-size: 40px" id="reservation">
-            Reserve Table
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <img src="./Images/reserved/r2.png" alt="" width="100%" />
-        </div>
-
-        <div class="col-md-5">
-          <form>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
             <div class="row">
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Your Name"
-                  style="margin-top: 20px" />
-              </div>
-              <div class="col-md-4">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Your E-mail"
-                  style="margin-top: 20px" />
-              </div>
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Your Phone"
-                  style="margin-top: 20px" />
-              </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Prashant Kaushik</h2 >
+                <p class="hero_desc" ><b>CSE , IV YEAR STUDENT</b> </p>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Date" style="margin-top: 20px" />
-              </div>
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Time" style="margin-top: 20px" />
-              </div>
-              <div class="col-md-4">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="#of People"
-                  style="margin-top: 20px" />
-              </div>
             </div>
-
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="margin-top: 20px"
-              placeholder="Message"></textarea>
-
-            <button type="submit" class="btn btn-primary" style="margin-top: 10px">
-              Reserve
-            </button>
-          </form>
         </div>
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="chefSection">
-    <div class="outerChefs">
-      <div class="row">
-          <div class="col-md-12">
-            <h1 style="text-align: center" id="chefs">Our Chefs</h1>
-          </div>
-        </div>
-        <div class="inner-chefs">
-          <div class="col-md-2"></div>
-            <div class="card" style="width: 100%">
-              <img class="card-img-top" src="./Images/chefs/chef1.jpg" width="100%"   alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Lorem ipsum</h5>
-                <p class="card-text text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas, magnam?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-2 chefcard d-flex flex-column align-items-center">
-            <div class="card" style="width:100%">
-              <img class="card-img-top" src="./Images/chefs/chef2.jpg" width="100%" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Lorem ipsum</h5>
-                <p class="card-text text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas, magnam?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-2 chefcard d-flex flex-column align-items-center">
-            <div class="card" style="width:100%">
-              <img class="card-img-top" src="./Images/chefs/chef3.jpg" width="100%" alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title text-center">Lorem ipsum</h5>
-                <p class="card-text text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas, magnam?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contactSection">
-    <div class="outercontact">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 style="text-align: center; font-size: 40px" id="contact">
-            Contact
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <img src="./Images/contact/cont-removebg-preview.png" alt="" />
-        </div>
-
-        <div class="col-md-5">
-          <form>
-            <input type="text" class="form-control" id="inputEmail3" placeholder="Name" style="margin-top: 30px" />
-            <input type="email" class="form-control" id="inputPassword3" placeholder="Email" style="margin-top: 10px" />
-            <input type="text" class="form-control" id="inputPassword3" placeholder="Phone" style="margin-top: 10px" />
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              style="margin-top: 10px"></textarea>
-            <button type="submit" class="btn btn-primary" style="margin-top: 10px">
-              Submit
-            </button>
-          </form>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="footerSection">
-    <div class="outerfooter">
-      <div class="row">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-2">
-            <h4 style="color: #ff6347">Prashant Kaushik</h4>
-            <p>
-              Thank you for visiting my restaurant website. Connect with me
-              over LinkedIn.
-            </p>
-            <p>
-              "Keep Coding. Keep Rising. The path to success is paved with
-              lines of code and endless ambition."
-            </p>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-2">
-            <h4 style="color: #ff6347">Quick Links</h4>
-            <h6><a href="#">Home</a></h6>
-            <h6><a href="#about">About</a></h6>
-            <h6><a href="#menu">Menu</a></h6>
-            <h6><a href="#events">Events</a></h6>
-            <h6><a href="#reservation">Reservation</a></h6>
-            <h6><a href="#chefs">Chefs</a></h6>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <h4 style="color: #ff6347">Contact Info</h4>
-            <p>
-              <span><i class="fa fa-phone" aria-hidden="true"></i></span><span
-                style="margin-left: 1%">+91-xxxxxxxxxx</span>
-            </p>
-            <p>
-              <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span><span
-                style="margin-left: 1%">pkkaushik75@gmail.com</span>
-            </p>
-            <p>
-              <span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span style="margin-left: 1%">Bareilly,Uttar Pradesh,India</span>
-            </p>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-2 col-1">
-                    <a href="" target="_blank">
-                      <h5>
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                      </h5>
-                    </a>
-                  </div>
-                  <div class="col-md-2 col-1">
-                    <a href="" target="_blank">
-                      <h5><i class="fa fa-github" aria-hidden="true"></i></h5>
-                    </a>
-                  </div>
-                  <div class="col-md-2 col-1">
-                    <h5><i class="fa fa-twitter" aria-hidden="true"></i></h5>
-                  </div>
-                  <div class="col-md-2 col-1">
-                    <h5><i class="fa fa-facebook" aria-hidden="true"></i></h5>
-                  </div>
-                  <div class="col-md-2 col-1">
-                    <h5>
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </h5>
-                  </div>
-                  <div class="col-md-2"></div>
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center" style="background-color: aqua;">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class= "imageAboutPage" alt="" height="350px">
                 </div>
-              </div>
-              <div class="col-md-6"></div>
+
+                <div class="col-lg-8">
+                    <p>A talented Software Engineer aspiring to gain a full-time position in a
+                        reputed company. Gained extensive experience in software
+                        development, testing, and deployment through internships. A highly
+                        motivated and hardworking individual skilled in different languages.
+                        Seeking a position to utilize the gained skills and experience to
+                        positively contribute to the company.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Prashant Kaushik</li>
+                                <li>Age: 20</li>
+                                <li>Persuing: B.Tech(CSE)</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Mail: pkkaushik75@gmail.com</li>
+                                <li>Phone: +91-9315694782</li>
+                                <li>Internship status: Done </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p><h4 class="text-center" style="background-color: aqua;">Internship</h1>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Name - JOVAC Web Development Course</li>
+                                        <li>Duration - Jun,2022 - Jul,2022</li>
+        
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Location - Mathura</li>
+                                        <li>Tech Used - HTML,CSS,JS,ReactJS</li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
+    </section>
+
+    <!-- Education section-->
+    <section id="Education">
+        <div class="container">
+            <h1 class="text-center" style="background-color: aqua;">Education</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card EducationText">
+                        <div class="card-body">
+                            <i class="fas EducationIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">High School</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Aggregate : 87%</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Completion year : 2018</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card EducationText">
+                        <div class="card-body">
+                            <i class='fas EducationIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Intermediate</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Aggregate : 88%</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Completion year : 2020</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card EducationText">
+                        <div class="card-body">
+                            <i class='far EducationIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">B.Tech(CSE)</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Aggregate : 77.5%</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Completion year : 2024</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+           <!---- <div class="row"> 
+                <div class="col-lg-4 mt-4">
+                    <div class="card EducationText">
+                        <div class="card-body">
+                            <i class='fas EducationIcon fa-search'></i>
+                            <h4 class="card-title mt-3">SEO</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card EducationText">
+                        <div class="card-body">
+                            <i class='fas EducationIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card EducationText">
+                        <div class="card-body">
+                            <i class='fas Education fa-wrench'></i>
+                            <h4 class="card-title mt-3">QA</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+
+    <!-- certifications-->
+    <br>
+    <section id="Certifications">
+        <div class="container">
+            <h1 class="text-center" style="background-color: aqua;">Certifications</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card cetificationsText">
+                        <div class="card-body">
+                            <i class="fas cetificationsIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Frontend Development</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Nov,2022 - Dec,2022</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Course By : Coursera</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card cetificationsText">
+                        <div class="card-body">
+                            <i class='fas cetificationsIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Web Development</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Nov,2022 - Dec,2022</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Course By : Udemy</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card cetificationsText">
+                        <div class="card-body">
+                            <i class='far cetificationsIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Java Framework</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Nov,2022 - Dec,2022</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Course By : Udemy</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card cetificationsText">
+                        <div class="card-body">
+                            <i class='fas cetificationsIcon fa-search'></i>
+                            <h4 class="card-title mt-3">Machine Learning</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Dec,2022 - Jan,2023</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Course By : Analytical Vidhya</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card cetificationsText">
+                        <div class="card-body">
+                            <i class='fas cetificationsIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">Backend Development</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Nov,2022 - Dec,2022</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Course By : Coursera</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card cetificationsText">
+                        <div class="card-body">
+                            <i class='fas cetificationsIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">Python for Data Science</h4>
+                            <p class="card-text mt-3"><ul><br>
+                                <li id="liedu">Oct,2022 - Nov,2022</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Course By : IBM</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <hr style="color: white" />
-          </div>
-          <div class="col-md-2"></div>
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center" style="background-color: aqua;">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Apna Restaurant</h4>
+                            <p class="card-text"><ul><br>
+                                <li id="liedu">Aug,2023 - Sep,2023</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Tech : HTML , CSS , Javascript</li>
+                            </ul></p>
+                            <div class="text-center">
+                                <a href="https://github.com/prashant-k7522/Dabotics-1" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Music With Us</h4>
+                            <p class="card-text"><ul><br>
+                                <li id="liedu">Sep,2022 - Nov,2022</li>
+                                <br>
+                                <br>
+                                <li id="liedu">Tech : HTML , CSS , Javascript , PHP</li>
+                            </ul></p>
+                            <div class="text-center">
+                                <a href="https://github.com/prashant-k7522/mini_project_2022.github.io" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Shopping Mania</h4>
+                            <p class="card-text"><ul><br>
+                                <li id="liedu">Apr,2023 - May,2023</li>
+                                <br>
+                                <li id="liedu">Tech : HTML , CSS , Javascript , Express , MongoDB , NodeJS</li>
+                            </ul></p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           <!---- <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Messaging Service</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center" style="background-color: aqua;">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/d/embed?mid=1Wuxlrv4HCrdnbA5zK9n1C-9fQaM&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>>
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3" href="https://www.gmail.com/pkkaushik75@gmail.com/">Contact Me</button>
+                    
+                </div>
+
+            </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8" style="text-align: center">
-            Prashant Kaushik @pkkaushik75@gmail.com
-          </div>
-          <div class="col-md-2"></div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/prashant.kaushik.1829405?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kaushik_prashant_1215/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/Pacific_Kaushik/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/prashant-kaushik-2b004721b" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <!--    <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a> -->
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
